@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STICKMAN: RESTORATION - 3D Cyberpunk Hack & Slash</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- 3D Canvas Container -->
+  <div id="canvas-container"></div>
+
+  <!-- Top Utilities Bar -->
+  <div id="top-bar" style="position: absolute; top: 15px; right: 25px; z-index: 80; display: flex; gap: 10px; pointer-events: auto;">
+    <button id="btn-sound-toggle" class="cyber-btn" style="padding: 6px 12px; font-size: 13px;">🔊 ÂM THANH</button>
+    <button id="btn-quick-controls" class="cyber-btn" style="padding: 6px 12px; font-size: 13px;">🎮 PHÍM</button>
+    <button id="btn-quick-menu" class="cyber-btn" style="padding: 6px 12px; font-size: 13px;">🏠 MENU</button>
+  </div>
+
+  <!-- Skip Intro Button (Visible only during Intro) -->
+  <button id="btn-skip-intro" class="cinematic-skip" style="display: none;">BỎ QUA INTRO [ESC / CLICK] &gt;&gt;</button>
+
+  <!-- Heads Up Display (HUD) -->
+  <div id="hud-container"></div>
+
+  <!-- Screens Overlay (Menu, Victory, Defeat, Modals) -->
+  <div id="screen-container"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
